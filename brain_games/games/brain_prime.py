@@ -25,7 +25,6 @@ def generate_question():
         correct_answer = 'yes'
     else:
         correct_answer = 'no'
-    correct_answer = str(num)
     return question, correct_answer
 
 

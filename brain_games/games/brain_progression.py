@@ -9,8 +9,8 @@ def progression():
     step = random.randint(2, 5)
     lst = []
     for i in range(length):
-        currentElement = start + i * step
-        lst.append(currentElement)
+        current_element = start + i * step
+        lst.append(current_element)
     return lst
 
 
