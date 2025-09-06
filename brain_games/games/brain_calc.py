@@ -10,12 +10,13 @@ def generate_question():
     random_operator = random.choice(operators)
     match random_operator:
         case '+': 
-            result = num1 + num2
+            correct_answer = num1 + num2
         case '-': 
-            result = num1 - num2
+            correct_answer = num1 - num2
         case '*': 
-            result = num1 * num2
-    return f'Question: {num1} {random_operator} {num2}', result
+            correct_answer = num1 * num2
+    question = f'Question: {num1} {random_operator} {num2}'
+    return question, correct_answer
     
 
 def check_answer(user_answer, correct_answer):
