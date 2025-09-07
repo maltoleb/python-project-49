@@ -4,8 +4,8 @@ RULES = 'Find the greatest common divisor of given numbers.'
 
 
 def generate_question():
-    a = random.randint(1, 30)
-    b = random.randint(1, 30)
+    a = random.randint(1, 30) //NOSONAR
+    b = random.randint(1, 30) //NOSONAR
     if a >= b:
         x, y = a, b
     else:

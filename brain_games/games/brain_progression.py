@@ -4,9 +4,9 @@ RULES = 'What number is missing in the progression?'
 
 
 def progression():
-    start = random.randint(1, 20)
-    length = random.randint(5, 10)
-    step = random.randint(2, 5)
+    start = random.randint(1, 20) //NOSONAR
+    length = random.randint(5, 10) //NOSONAR
+    step = random.randint(2, 5) //NOSONAR
     lst = []
     for i in range(length):
         current_element = start + i * step
@@ -16,7 +16,7 @@ def progression():
 
 def generate_question():
     lst = progression()
-    i = random.randint(0, len(lst) - 1)
+    i = random.randint(0, len(lst) - 1) //NOSONAR
     correct_answer = lst[i]
     lst[i] = '..'
     str_lst = []
