@@ -4,10 +4,10 @@ RULES = 'What is the result of the expression?'
 
 
 def generate_question():
-    num1 = random.randint(0, 100) //NOSONAR
-    num2 = random.randint(0, 100) //NOSONAR
+    num1 = random.randint(0, 100)  # NOSONAR
+    num2 = random.randint(0, 100)  # NOSONAR
     operators = ['+', '-', '*']
-    random_operator = random.choice(operators) //NOSONAR
+    random_operator = random.choice(operators)  # NOSONAR
     match random_operator:
         case '+': 
             correct_answer = num1 + num2

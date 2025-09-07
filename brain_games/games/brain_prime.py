@@ -19,7 +19,7 @@ def is_prime(num):
 
 
 def generate_question():
-    num = random.randint(1, 20) //NOSONAR
+    num = random.randint(1, 20)  # NOSONAR
     question = f'Question: {num}'
     if is_prime(num):
         correct_answer = 'yes'

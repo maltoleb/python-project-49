@@ -13,7 +13,7 @@ def check_answer(user_answer, correct_answer):
 
 
 def generate_question():
-    num = random.randint(0, 100) //NOSONAR
+    num = random.randint(0, 100)  # NOSONAR
     question = f'Question: {num}'
     if is_even(num):
         correct_answer = 'yes'
